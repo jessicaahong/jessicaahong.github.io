@@ -8,7 +8,13 @@
 
 }
 
+.dark-text {
+	color: #B0171F;
+}
 
+.offset-left {
+	margin-left: 20px;
+}
 
 
 /* MENU CSS */

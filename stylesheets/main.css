@@ -1,5 +1,16 @@
-#homeContentDiv {
+/*Fonts*/
+.std-text {
+	font-family: 'Arvo', serif;
+}
+.dark-text {
+	color: #B0171F;
+}
+#plane-icon {
+	font-size: 22px;
+}
 
+/*Layout*/
+#homeContentDiv {
 	height: 100vh;
 	width: 100vw;
 }
@@ -8,29 +19,69 @@
 	float: left;
 	margin-top: 14px;
 	height: 200px;
-	width: 49vw;
+	width: 49.5vw;
 	background-color: red;
 	border-bottom: 5px solid white;
+	text-align: center;
 }
 
 #block2, #block4, #block6, #block8 {
 	float: right;
 	height: 200px;
-	width: 49vw;
+	width: 49.5vw;
 	margin-top: 14px;
 	background-color: red;
 	border-bottom: 5px solid white;
+	text-align: center;
 }
 
+#block3, #block4, #block5, #block6, #block7, #block8 {
+	margin-top: 1px;
+} 
+
 #block1 {
-	background-color: #fffaf0;
-	/*background-color: #E7DFDD;*/
+	background-color: #fdfcf3;
 }
 
 #block2 {
-	background-color: #fff8dc;
+	background-color: #fffaf0;
+
 }
 
 #block3 {
+	background-color: #ffefdb;
+}
+
+#block4 {
 	background-color: #ffebcd;
+}
+/*#tanpattern{
+	max-width: 100%;
+	max-height: 100%;
+}*/
+
+#block5 {
+	background-color: #EFCBB6;
+}
+#block6 {
+	background-color: #F2A292;
+	background-color: #F95149; 
+}
+
+#block7 {
+	background-color: #F95149;
+	background-color: #FF322C;
+}
+
+#block8 {
+	background-color: red;
+}
+
+
+/*MarginCorrections*/
+.offset-left {
+	margin-left: 20px;
+}
+.offset-right {
+	margin-right: 20px;
 }
