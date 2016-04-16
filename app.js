@@ -1,7 +1,11 @@
 function init() {
-	$('#fullpage').fullpage();
+	console.log('javascript linked');
+	loadClickEventListeners();
 }
 
-$("#menuButton").click(function() {
-	console.log('it was clicked');
-});
+
+function loadClickEventListeners() {
+	$("div.menu-button").on("click", function() {
+		console.log('it was clicked');
+	});
+}

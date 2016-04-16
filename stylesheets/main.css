@@ -1,0 +1,36 @@
+#homeContentDiv {
+
+	height: 100vh;
+	width: 100vw;
+}
+
+#block1, #block3, #block5, #block7 {
+	float: left;
+	margin-top: 14px;
+	height: 200px;
+	width: 49vw;
+	background-color: red;
+	border-bottom: 5px solid white;
+}
+
+#block2, #block4, #block6, #block8 {
+	float: right;
+	height: 200px;
+	width: 49vw;
+	margin-top: 14px;
+	background-color: red;
+	border-bottom: 5px solid white;
+}
+
+#block1 {
+	background-color: #fffaf0;
+	/*background-color: #E7DFDD;*/
+}
+
+#block2 {
+	background-color: #fff8dc;
+}
+
+#block3 {
+	background-color: #ffebcd;
+}

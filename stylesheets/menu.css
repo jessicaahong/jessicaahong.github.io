@@ -1,0 +1,59 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+
+#contentWrapper {
+
+}
+
+
+
+
+/* MENU CSS */
+.top, .left, .right {
+	background: #ffffff;
+	position: fixed;
+	}
+	.left, .right {
+		top: 0; 
+		bottom: 0;
+		width: 20px;
+		}
+		.left { left: 0; }
+		.right { right: 0; }
+		
+	.top {
+		left: 0; 
+		right: 0;
+		height: 20px;
+		}
+		.top { top: 0; }
+
+.menu-button {
+    top: 20px;
+    position: fixed;
+    left: 50%;
+    width: 0px;
+    margin-left: -35px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 30px solid white;
+}
+
+/*Menu media queries*/
+@media 
+only screen and (max-width: 600px),
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+
+{
+	.left, .right { 
+		display: none; 
+	}
+
+	#block1, #block2, #block3, #block4, #block5, #block6, #block7, #block8 {
+		float: none !important;
+		width: 100vw !important;
+	}
+}
