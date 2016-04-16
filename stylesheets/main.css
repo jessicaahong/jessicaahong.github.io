@@ -1,12 +1,13 @@
 /*Fonts*/
 .std-text {
-	font-family: 'Arvo', serif;
+	font-family: 'Inconsolata', serif;
 }
 .dark-text {
 	color: #B0171F;
 }
-#plane-icon {
-	font-size: 22px;
+
+#plane-icon, #mail-icon, #gh-icon, #li-icon, #pointer-icon, #star-icon {
+	font-size: 50px;
 }
 
 /*Layout*/
@@ -17,64 +18,87 @@
 
 #block1, #block3, #block5, #block7 {
 	float: left;
-	margin-top: 14px;
+/*	margin-top: 14px;*/
 	height: 200px;
-	width: 49.5vw;
+	width: 50%;
 	background-color: red;
-	border-bottom: 5px solid white;
+/*	border-bottom: 5px solid white;*/
 	text-align: center;
 }
 
 #block2, #block4, #block6, #block8 {
 	float: right;
 	height: 200px;
-	width: 49.5vw;
-	margin-top: 14px;
+	width: 50%;
+/*	margin-top: 14px;*/
 	background-color: red;
-	border-bottom: 5px solid white;
+/*	border-bottom: 5px solid white;*/
 	text-align: center;
 }
 
 #block3, #block4, #block5, #block6, #block7, #block8 {
-	margin-top: 1px;
+/*	margin-top: 1px;*/
 } 
 
 #block1 {
 	background-color: #fdfcf3;
+	margin-top: 14px;
+}
+#block1-content {
+	text-align: left;
+	font-size: 30px;
+	margin-left: 30px;
 }
 
 #block2 {
 	background-color: #fffaf0;
-
+	margin-top: 14px;
+	position: relative;
+}
+#block2-content {
+	vertical-align: center;
+	font-size: 30px;
+	position: absolute;  
+	top: 50%; left: 50%;
+  	transform: translate(-50%,-50%);
 }
 
 #block3 {
 	background-color: #ffefdb;
+	position: relative;
+}
+#block3-content {
+	vertical-align: center;
+	font-size: 30px;
+	position: absolute;  
+	top: 50%; left: 50%;
+  	transform: translate(-50%,-50%);
 }
 
 #block4 {
-	background-color: #ffebcd;
-}
-/*#tanpattern{
-	max-width: 100%;
-	max-height: 100%;
-}*/
-
-#block5 {
+	/*background-color: #ffebcd;*/
 	background-color: #EFCBB6;
 }
-#block6 {
+#redpattern{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#block5 {
 	background-color: #F2A292;
-	background-color: #F95149; 
+}
+#block6 {
+	background-color: #D15D59; 
 }
 
 #block7 {
-	background-color: #F95149;
-	background-color: #FF322C;
+/*	background-color: #F95149;*/
+	/*background-color: #FF322C;*/
+	background-color: #B0171F;
 }
 
 #block8 {
-	background-color: red;
+	background-color: #690D12;
 }
 
 
@@ -84,4 +108,116 @@
 }
 .offset-right {
 	margin-right: 20px;
+}
+
+/*about me animation*/
+.test {
+	-webkit-font-smoothing: antialiased;
+	-webkit-animation: 3s bounce infinite;
+	-moz-animation: 3s bounce infinite;
+	-ms-animation: 3s bounce infinite;
+	-o-animation: 3s bounce infinite;
+	animation: 3s bounce infinite;
+}
+
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateX(0);} 
+ 40% {-webkit-transform: translateX(-30px);}
+ 60% {-webkit-transform: translateX(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateX(0);}
+ 40% {-moz-transform: translateX(-30px);}
+ 60% {-moz-transform: translateX(-15px);}
+}
+ 
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateX(0);}
+ 40% {-o-transform: translateX(-30px);}
+ 60% {-o-transform: translateX(-15px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateX(0);}
+ 40% {transform: translateX(-30px);}
+ 60% {transform: translateX(-15px);}
+}
+
+/*blinking cursor animation*/
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #B0171F;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #B0171F;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #B0171F;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #B0171F;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #B0171F;
+  }
+}
+
+/*Homepage media queries*/
+@media 
+only screen and (max-width: 600px),
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+
+{
+
+	#block1, #block2, #block3, #block4, #block5, #block6, #block7, #block8 {
+		float: none !important;
+		width: 100vw !important;
+	}
+
+	#block1-content {
+		padding-top: 15px;
+	}
+	#block2 {
+		margin-top: 0px;
+	}
+
 }
