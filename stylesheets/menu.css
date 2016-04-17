@@ -4,14 +4,7 @@
 }
 
 
-#contentWrapper {
-
-}
-
-
-
-
-/* MENU CSS */
+/* BORDER CSS */
 .top, .left, .right {
 	background: #ffffff;
 	position: fixed;
@@ -20,7 +13,7 @@
 		top: 0; 
 		bottom: 0;
 		width: 20px;
-		z-index: 10;
+		z-index: 30;
 		}
 		.left { left: 0; }
 		.right { right: 0; }
@@ -30,28 +23,22 @@
 		right: 0;
 		height: 20px;
 		top: 0;
-		z-index: 10;
+		z-index: 30;
 		}
 
-.menu-button {
-    top: 20px;
+.top-button {
+    top: 19px;
     position: fixed;
     left: 50%;
-/*    height: 35px;
-    width: 70px;*/
-/*    margin-left: -35px;*/
-/*    border-radius: 0 0 90px 90px;
-    background-color: white;
-    margin: 0 auto;*/
     width: 0px;
     margin-left: -22.5px;
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     border-top: 30px solid white;
-	z-index: 10;
+	z-index: 30;
 }
 
-.menu-icon-div {
+#menu-icon-div {
 	position: fixed;
 	left: 50%;
 	top: 20px;
@@ -59,7 +46,7 @@
 	text-align: center;
 	margin-left: -7px;
 	font-size: 20px;
-	z-index: 10;
+	z-index: 30;
 }
 .menu-icon {
 	color: #B0171F;
