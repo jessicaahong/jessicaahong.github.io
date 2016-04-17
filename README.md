@@ -1,1 +1,3 @@
-#my portfolio!
+# jessiehong.com
+Portfolio Repository.
+
