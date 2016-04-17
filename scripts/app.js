@@ -29,16 +29,6 @@ function setHoverAnimation(div, target, animation) {
 	);
 }
 
-// function setUpSlideshow() {
-// 	$(".slideshow").cycle({
-//     fx:     'fade', 
-//     speed:  'fast', 
-//     timeout: 0, 
-//     next:   '#next', 
-//     prev:   '#prev' 
-// 	});
-// }
-
 function loadClickEventListeners() {
 	$("#menu-icon-div").on("click", function() {
 		$(".displayed-modal").addClass("hidden");
@@ -55,7 +45,6 @@ function loadClickEventListeners() {
 		window.setTimeout(function(){
 			showSection("#about-div");
 		}, 500);
-		// setUpSlideshow();
 	});
 	$("#block3").on("click", function() {
 		expandModal();
@@ -70,9 +59,6 @@ function loadClickEventListeners() {
 		}, 500);
 	});
 }
-
-
-
 
 function loadAnimationListeners() {
 	setHoverAnimation("#block3", "#pointer-icon", "throb");

@@ -3,6 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset"UTF-8">
 	<title>Jessie Hong</title>
+	<link rel="icon" href="images/favicon.ico">
 <!-- APPLICATION CSS -->
 	<link rel="stylesheet" href="stylesheets/menu.css">
 	<link rel="stylesheet" href="stylesheets/main.css">
@@ -11,8 +12,10 @@
 	<link rel="stylesheet" href="stylesheets/process.css">
 <!-- jQUERY-->
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!-- jQuery Cycle JS -->
+	<script src="http://malsup.github.io/min/jquery.cycle2.min.js"></script>
 <!-- APPLICATION JS -->
-	<script src="app.js"></script>
+	<script src="scripts/app.js"></script>
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<script src="https://use.fonticons.com/41158f7a.js"></script>
@@ -40,7 +43,61 @@
 		</div>
 
 		<div id="projects-div" class="hidden">
-			<h1>Welcome to the my work div!</h1>
+			<div id="slideshow-container">
+<!-- 				<div class="prev hidden">
+					<i class="fa fa-angle-left"></i>
+				</div>
+				<div class="next hidden">
+					<i class="fa fa-angle-right"></i>
+				</div> -->
+				<div class="cycle-slideshow"
+						data-cycle-swipe=true
+				    data-cycle-fx="fadeOut"
+    				data-cycle-timeout="0"
+    				data-cycle-slides="> div"
+    				data-cycle-prev=".prev"
+    				data-cycle-next=".next">
+					<div class="slide1">
+	<!-- 					<div id="barHopper-img-div" 
+								data-cycle-fx="fadeOut"
+								class="cycle-slideshow"
+    						data-cycle-pause-on-hover="true"
+    						data-cycle-speed="30"> -->
+    					<div id="barHopper-img-div">
+							<img src="images/barHopper1.png" class="barHopper-img">
+<!-- 							<img src="images/barHopper2.png" class="barHopper-img"> -->
+						</div>
+						<div id="barHopper-text-div">
+							<h1 class="project-title std-text">BARHOPPER</h1>
+							<p class="alt-text">
+							Looking for live music or a good happy hour within walking distance? barHopper is a hybrid mobile application that crowdsources bar recommendations within a half mile of your location.</p>
+							<p class="alt-text">
+							Built out entire application in three days with no formal instruction in building mobile apps.
+							</p>
+							<span class="dark-text std-text tech-used">TECHNOLOGIES USED</span>
+							<p class="alt-text">
+							AngularJS, Ionic, Firebase, JavaScript, Yelp API, Apache Cordova, Express.
+							</p>
+							<br>
+							<div class="slideshow-buttons">
+								<span class="prev std-text">
+									<i class="fa fa-angle-left"></i>
+									Previous |
+								</span>
+								<span class="next std-text"> Next 
+									<i class="fa fa-angle-right"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="slide2">
+					</div>
+					<div class="slide3">
+					</div>
+					<div class="slide4">
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div id="process-div" class="hidden">
@@ -128,9 +185,9 @@
 
 		<div id="block6">		
 			<div id="block6-content" class="offset-right">
-				<a href="#"><i class="fa fa-github-alt dark-text" id="gh-icon"></i></a>
-				<a href="#"><i class="fa fa-linkedin-square dark-text" id="li-icon"></i></a>
-				<a href="#"><i class="fa fa-envelope dark-text" id="mail-icon"></i></a>
+				<a href="https://github.com/jessicaahong" target="_blank"><i class="fa fa-github-alt dark-text" id="gh-icon"></i></a>
+				<a href="https://www.linkedin.com/in/jessiehong" target="_blank"><i class="fa fa-linkedin-square dark-text" id="li-icon"></i></a>
+				<a href="mailto:jessiehong9@gmail.com"><i class="fa fa-envelope dark-text" id="mail-icon"></i></a>
 				<p class="block6-text std-text dark-text">
 					CONTACT ME
 				</p>

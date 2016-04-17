@@ -55,6 +55,11 @@ body {
 	color: #B0171F;
 }
 
+#menu-icon-div:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
 /*Menu media queries*/
 @media 
 only screen and (max-width: 600px),
