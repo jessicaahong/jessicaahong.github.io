@@ -5,23 +5,75 @@
 	z-index: 27;
 	height: 100vh;
 	width: 100vw;
+	overflow-y: auto;
+	margin: 0 auto;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  	-webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    overflow-y: auto;
 }
 
 #process1, #process2, #process3 {
 	width: 300px;
 	height: 300px;
-	display: inline-block;
-	vertical-align: center;
+	color:  #B0171F;
+	margin: 3px;
+	text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+	-webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
-#process1 {
-	background-color: red;
+#process-lightbulb {
+	height: 70px;
+	width: 70px;
 }
 
-#process2 {
-	background-color: green;
+#process-beaker {
+	height: 75px;
+	width: 75px;
 }
 
-#process3 {
-	background-color: blue;
+#process-heart {
+	padding-top: 8px;
+	font-size: 60px;
+}
+
+.icon-holder-div {
+	height: 75px;
+}
+
+@media 
+only screen and (max-width: 900px),
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+
+{
+		.flex-container {
+		  -webkit-flex-direction: column;
+	    flex-direction: column;
+		}
+		#process1{
+			margin-top: 40px;
+		}
 }
