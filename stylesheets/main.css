@@ -159,14 +159,19 @@
 
 /*Block 7 Styles*/
 #block7 {
-	/*old styles*/
-/*	background-color: #F95149;*/
-	/*background-color: #FF322C;*/
-	/*most recent color*/
 	background-color: #B0171F;
-	/*background-image: url('../images/swirlsthumb.png')*/
+	position: relative;
 }
-
+#block7-content {
+	vertical-align: center;
+	font-size: 24px;
+	position: relative;  
+	top: 50%;
+  	transform: translateY(-50%);
+}
+#copyright-text {
+	color: #580b0f;
+}
 
 /*Block 8 Styles*/
 #block8 {
@@ -533,6 +538,9 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 	}
 	#block5-content {
 		padding-left: 15px;
+	}
+	.next, .prev {
+		position:;
 	}
 	
 }

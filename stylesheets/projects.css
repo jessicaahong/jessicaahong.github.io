@@ -26,29 +26,6 @@
 	width: 700px;
 }
 
-.slide2 {
-	background-color: cyan;
-}
-.slide3 {
-	background-color: blue;
-}
-.slide4 {
-	background-color: green;
-}
-
-
-/*Font Styles*/
-.project-title {
-	color: #B0171F;
-	font-size: 30px;
-}
-.tech-used {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 2px;
-}
-
-
 /*#prev, #next {
 	font-size: 50px;
 }*/
@@ -82,21 +59,39 @@
 
 .slideshow-buttons {
 	position: absolute;
-	bottom: 10px;
+	bottom: 0px;
 }
-#barHopper-img-div {
+.slideshow-buttons-desktop {
+	position: absolute;
+	display: inline-block;
+	float: right;
+	width: 50%;
+	height: 100%;
+	font-size: 18px;
+	margin-left: -70px;
+    top: 471px;
+}
+#barHopper-img-div, #lq-img-div {
 	position: relative;
 	width: 40%;
 	float: left;
 	display: inline-block;
 }
-.barHopper-img {
+#pp-img-div, #hm-img-div {
+	position: relative;
+	width: 60%;
+	float: left;
+	text-align: center;
+	display: inline-block;
+	margin-top: 25px;	
+}
+.barHopper-img, .lq-img, .pp-img, .hm-img  {
 	position: relative;
 /*	display: inline-block;*/
 	width: 100%;
 	height: auto;
 }
-#barHopper-text-div {
+#barHopper-text-div, #lq-text-div {
 	position: relative;
 	display: inline-block;
 	float: right;
@@ -104,12 +99,42 @@
 	width: 50%;
 	height: 100%;
 	font-size: 18px;
-	text-align: justify;
+}
+.tech-used-div {
+    position: absolute;
+    margin: 0 auto;
+    margin-right: 30px;
+    top: 390px;
+    width: 700px;
+    font-size: 18px;
 }
 
+#pp-text-div, #hm-text-div {
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin-left: 30px;
+	width: 30%;
+	height: 100%;
+	font-size: 18px;
+}
 
-
-
+/*Font Styles*/
+.project-title {
+	color: #B0171F;
+	font-size: 30px;
+}
+.tech-used {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+.gh-link {
+	text-decoration: none;
+}
+.gh-link:hover {
+	text-decoration: underline;
+}
 
 @media 
 only screen and (max-width: 750px),
@@ -121,16 +146,22 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 		height: 300px;
 		width: 300px;
 	}
-	#barHopper-img-div {
+	#barHopper-img-div, #lq-img-div, #pp-img-div, #hm-img-div {
 		text-align: center;
 		float: none;
 		width: 100%;
 	}
-	.barHopper-img {
+/*	#pp-img-div, #hm-img-div {
+		text-align: center;
+		float: none;
+		width: 100%;
+	}*/
+	.barHopper-img, .lq-img, .pp-img, .hm-img {
 		text-align: center;
 		width: 70%;
 	}
-	#barHopper-text-div {
+
+	#barHopper-text-div, #lq-text-div, #pp-text-div, #hm-text-div {
 		float: none;
 		margin-left: 0;
 		width: 100%;
