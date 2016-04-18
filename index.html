@@ -39,7 +39,61 @@
 		</div>
 
 		<div id="about-div" class="hidden">
-			<h1 class="dark-text announcement std-text">COMING SOON<br><i class="fa fa-heart"></i></h1>
+			<div id="about-wrapper">
+				<div class="bio-div">
+					<h1 id="me" class="std-text dark-text">me</h1>
+					<p class="std-text bio-text">
+						I'm <b>Jessie Hong</b>, a full stack web developer currently living and working in <b>San Francisco, CA</b>.
+					</p>
+					<p class="std-text bio-text">
+						I'm passionate about both <b>UX design</b> and <b>database architecture</b>.
+					</p>
+					<p class="std-text bio-text">
+						<b>Let's work together.</b>
+					</p>
+				</div>
+				<div class="knowledge-div">
+					<h2 id="knowledge-header" class="std-text dark-text">Knowledge</h2>
+					<mark class="knowledge std-text">
+					Active Record
+					</mark>
+					<mark class="knowledge std-text">AJAX</mark>
+					<mark class="knowledge std-text">AngularJS</mark>
+					<mark class="knowledge std-text">Apache Cordova</mark>
+					<mark class="knowledge std-text">Bootstrap</mark>
+					<mark class="knowledge std-text">CSS3</mark>
+					<mark class="knowledge std-text">Express</mark>
+					<mark class="knowledge std-text">Git/GitHub</mark>
+					<mark class="knowledge std-text">Gulp</mark>
+					<mark class="knowledge std-text">Handlebars.js</mark>
+					<mark class="knowledge std-text">Heroku</mark>
+					<mark class="knowledge std-text">HTML5</mark>
+					<mark class="knowledge std-text">Ionic</mark>
+					<mark class="knowledge std-text">JavaScript</mark>
+					<mark class="knowledge std-text">jQuery</mark>
+					<mark class="knowledge std-text">MongoDB</mark>
+					<mark class="knowledge std-text">Mongoose.js</mark>
+					<mark class="knowledge std-text">Node.js</mark>
+					<mark class="knowledge std-text">PostgreSQL</mark>
+					<mark class="knowledge std-text">Rails</mark>
+					<mark class="knowledge std-text">Rspec</mark>
+					<mark class="knowledge std-text">Ruby</mark>
+					<mark class="knowledge std-text">Sass</mark>
+					<mark class="knowledge std-text last">Sinatra</mark>
+				</div>
+				<div class="learning-div">
+					<h2 id="learning-header" class="std-text dark-text">
+					What I'm Learning</h2>
+					<mark class="learning std-text">ReactJS</mark>
+					<mark class="learning std-text">Redux</mark>
+					<mark class="learning std-text">Phaser</mark>
+				</div>
+				<div class="downloads-div">
+					<h2 id="downloads-header" class="std-text dark-text">
+					Downloads</h2>
+					<a href="assets/jessie_hong_resume.pdf"><mark class="downloads std-text last">The Resume (pdf)</mark></a>
+				</div>
+			</div>
 		</div>
 
 		<div id="projects-div" class="hidden">
@@ -147,8 +201,8 @@
 									<i class="fa fa-angle-right"></i>
 								</span>
 							</div>
-							<div class="tech-used-div">
-								<span class="dark-text std-text tech-used">TECHNOLOGIES USED</span><br>
+							<div class="tech-used-div" id="pp-tech-used">
+								<div class="dark-text std-text tech-used">TECHNOLOGIES USED</div><br>
 								<span class="alt-text">
 								Ruby on Rails, Active Record, PostgreSQL, bCrypt, Sass, Action Mailer. <a href="https://github.com/jessicaahong/LoveAtFirstBite" target-"_blank" class="dark-text gh-link">Check out my code.</a>
 								</span>
@@ -183,8 +237,8 @@
 								<i class="fa fa-angle-right"></i>
 							</span>
 						</div>
-						<div class="tech-used-div">
-							<span class="dark-text std-text tech-used">TECHNOLOGIES USED</span><br>
+						<div class="tech-used-div" id="hm-tech-used">
+							<div class="dark-text std-text tech-used">TECHNOLOGIES USED</div><br>
 							<span class="alt-text">
 							HTML, CSS, Javascript and jQuery. <a href="https://github.com/jessicaahong/hangryMouse" target="_blank" class="dark-text gh-link">Check out my code.</a>
 							</span>
@@ -269,11 +323,12 @@
 		<div id="block5">
 			<div id="block5-content" class="offset-right">
 				<span class="block5-text dark-text std-text">
-				CHECK OUT MY<br>THOUGHT PROCESS
+				CHECK OUT MY<br>
+				<span id="emphasis5">THOUGHT PROCESS</span>
 				</span><br>
-				<div class="lightbulb-div" id="hidden">
+<!-- 				<div class="lightbulb-div" id="hidden">
 					<img src="images/lightbulb.png" id="lightbulb">
-				</div>
+				</div> -->
 			</div>
 		</div>
 

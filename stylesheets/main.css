@@ -125,7 +125,7 @@
 	width: 70px;
 }
 #hidden {
-	display: none;
+	opacity: 0;
 }
 
 /*Block 6 Styles*/
@@ -170,7 +170,7 @@
   	transform: translateY(-50%);
 }
 #copyright-text {
-	color: #580b0f;
+	color: #770F0F;
 }
 
 /*Block 8 Styles*/
@@ -275,54 +275,134 @@
   }
 }
 
+
+/*star animation*/
+.bob {
+	-webkit-animation: 1.5s bob infinite;
+	-moz-animation: 1.5s bob infinite;
+	-ms-animation: 1.5s bob infinite;
+	-o-animation: 1.5s bob infinite;
+	animation: 1.5s bob infinite;
+}
+@keyframes bob {
+	0% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-4px);
+		-webkit-transform: translateY(-4px);
+	}
+	100% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+}
+@-webkit-keyframes bob {
+	0% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-4px);
+		-webkit-transform: translateY(-4px);
+	}
+	100% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+}
+@-ms-keyframes bob {
+	0% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-4px);
+		-webkit-transform: translateY(-4px);
+	}
+	100% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+}
+@-moz-keyframes bob {
+	0% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-4px);
+		-webkit-transform: translateY(-4px);
+	}
+	100% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+}
+@-o-keyframes bob {
+	0% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-4px);
+		-webkit-transform: translateY(-4px);
+	}
+	100% {
+		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+	}
+}
+
 /*lightbulb animation*/
-#flicker {
-	-webkit-animation: 5s flicker infinite;
-	-moz-animation: 0.4s flicker 2 forwards;
-	-ms-animation: 0.4s flicker 2 forwards;
-	-o-animation: 0.4s flicker 2 forwards;
-	animation: 5s flicker infinite;
+/*#flicker {
+	-webkit-animation: 0.1s flicker 3 forwards;
+	-moz-animation: 0.2s flicker 2 forwards;
+	-ms-animation: 0.2s flicker 2 forwards;
+	-o-animation: 0.2s flicker 2 forwards;
+	animation: 0.1s flicker 3 forwards;
 }
 @-webkit-keyframes flicker {
   from, to {
-    display: none;
+    opacity: 0;
   }
   100% {
-    display: block;
+    opacity: 1;
   }
 }
 @-moz-keyframes flicker {
   from, to {
-    display: none;
+    opacity: 0;
   }
   100% {
-    display: block;
+    opacity: 1;
   }
 }
 @-ms-keyframes flicker {
   from, to {
-    display: none;
+    opacity: 0;
   }
   100% {
-    display: block;
+    opacity: 1;
   }
 }
 @-o-keyframes flicker {
   from, to {
-    display: none;
+    opacity: 0;
   }
   100% {
-    display: block;
+    opacity: 1;
   }
 }
 @keyframes flicker {
   from, to {
-    display: none;
+    opacity: 0;
   }
   100% {
-    display: block;
+    opacity: 1;
   }
-}
+}*/
 
  /*block 4 animation*/
 .spreading {

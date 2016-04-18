@@ -156,15 +156,20 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 		float: none;
 		width: 100%;
 	}*/
-	.barHopper-img, .lq-img, .pp-img, .hm-img {
+	.barHopper-img, .lq-img {
 		text-align: center;
 		width: 70%;
+	}
+	.pp-img, .hm-img {
+		text-align: center;
+		width: 90%;
 	}
 
 	#barHopper-text-div, #lq-text-div, #pp-text-div, #hm-text-div {
 		float: none;
 		margin-left: 0;
 		width: 100%;
+		text-align: center;
 	}
 	.slide1, .slide2, .slide3, .slide4 {
 		/*width: 100%;*/
@@ -175,6 +180,28 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 	.slideshow-buttons {
 		position: relative;
 		text-align: center;
+		margin-bottom: 5px;
+	}
+	
+	.tech-used-div {
+		float: none;
+		position: absolute;
+		text-align: center;
+		width: 300px;
+	}
+	.tech-used {
+		margin-bottom: 0px;
+	}
+	#pp-tech-used {
+		margin-top: 150px;
+	}
+	#hm-tech-used {
+		margin-top: 190px;
+	}
+	.slideshow-buttons-desktop {
+		position: relative;
+		text-align: center;
+		margin-bottom: 5px;
 	}
 
 }

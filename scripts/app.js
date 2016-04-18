@@ -61,19 +61,21 @@ function loadClickEventListeners() {
 }
 
 function loadAnimationListeners() {
+	setHoverAnimation("#block2", "#star-icon", "bob");
 	setHoverAnimation("#block3", "#pointer-icon", "throb");
 	setHoverAnimation("#gh-icon", "#gh-icon", "grow");
 	setHoverAnimation("#li-icon", "#li-icon", "grow");
 	setHoverAnimation("#mail-icon", "#mail-icon", "grow");
 	setHoverAnimation("#block4", "#emphasis4", "spreading");
+	setHoverAnimation("#block5", "#emphasis5", "spreading");
 
-	$("#block5").hover(
-		function(){
-			console.log('hovering');
-			$(".lightbulb-div").attr('id','flicker');
-		},
-		function(){
-			$(".lightbulb-div").attr('id','hidden');
-		}
-	);
+	// $("#block5").hover(
+	// 	function(){
+	// 		console.log('hovering');
+	// 		$(".lightbulb-div").attr('id','flicker');
+	// 	},
+	// 	function(){
+	// 		$(".lightbulb-div").removeAttr('id','flicker');
+	// 	}
+	// );
 }
