@@ -136,6 +136,16 @@
 	text-decoration: underline;
 }
 
+@media only screen and (max-width: 375px)
+{ 
+	#hm-buttons {
+		margin-top: -24px;
+	}
+	#pp-tech-used {
+		margin-top: 20px;
+	}
+}
+
 @media 
 only screen and (max-width: 750px),
 only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
@@ -195,15 +205,18 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 	#hm-tech-used {
 		margin-top: 190px;
 	}
+/*	.slideshow-buttons-desktop {
+		position: relative;
+		text-align: center;
+		margin-bottom: 10px;
+	}*/
 	.slideshow-buttons-desktop {
 		position: relative;
 		text-align: center;
 		margin-bottom: 10px;
-	}
-	.slideshow-buttons-desktop {
 		width: 300px;
-    top: 136px;
-    height: 50px;
+		top: 136px;
+		height: 50px;
 	}
 
 }
