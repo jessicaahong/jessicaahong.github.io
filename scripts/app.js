@@ -68,6 +68,10 @@ function loadAnimationListeners() {
 	setHoverAnimation("#mail-icon", "#mail-icon", "grow");
 	setHoverAnimation("#block4", "#emphasis4", "spreading");
 	setHoverAnimation("#block5", "#emphasis5", "spreading");
+	setHoverAnimation("#process1", "#process-lightbulb", "grow");
+	setHoverAnimation("#process2", "#process-beaker", "grow");
+	setHoverAnimation("#process3", "#process-heart", "grow");
+
 
 	// $("#block5").hover(
 	// 	function(){
