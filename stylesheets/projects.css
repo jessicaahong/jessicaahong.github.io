@@ -18,8 +18,7 @@
 	z-index: 30px;
 	top: 0;
 	margin: 50px auto;
-	position: relative;  
-	
+	position: relative;
 }
 .slide1, .slide2, .slide3, .slide4 {
 	height: 500px;

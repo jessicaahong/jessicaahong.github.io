@@ -71,15 +71,4 @@ function loadAnimationListeners() {
 	setHoverAnimation("#process1", "#process-lightbulb", "grow");
 	setHoverAnimation("#process2", "#process-beaker", "grow");
 	setHoverAnimation("#process3", "#process-heart", "grow");
-
-
-	// $("#block5").hover(
-	// 	function(){
-	// 		console.log('hovering');
-	// 		$(".lightbulb-div").attr('id','flicker');
-	// 	},
-	// 	function(){
-	// 		$(".lightbulb-div").removeAttr('id','flicker');
-	// 	}
-	// );
 }

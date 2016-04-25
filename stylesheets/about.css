@@ -40,7 +40,8 @@
 .learning-div {
 	margin-bottom: 30px;
 }
-.knowledge:hover, .learning:hover, .downloads:hover {
+/*.knowledge:hover, .learning:hover, .downloads:hover {*/
+.downloads:hover {
 	padding: 3px 7px 3px 7px;
 	margin: 2px 3px 2px 3px;
 }

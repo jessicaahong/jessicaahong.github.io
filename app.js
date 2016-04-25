@@ -29,16 +29,6 @@ function setHoverAnimation(div, target, animation) {
 	);
 }
 
-// function setUpSlideshow() {
-// 	$(".slideshow").cycle({
-//     fx:     'fade', 
-//     speed:  'fast', 
-//     timeout: 0, 
-//     next:   '#next', 
-//     prev:   '#prev' 
-// 	});
-// }
-
 function loadClickEventListeners() {
 	$("#menu-icon-div").on("click", function() {
 		$(".displayed-modal").addClass("hidden");
